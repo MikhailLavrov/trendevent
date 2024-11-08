@@ -2,8 +2,10 @@
 
 .callback {
   padding: 20px;
-  width: 400px;
+
+  max-width: 400px;
   min-height: 270px;
+  max-height: fit-content;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
 
   font-family: var(--ff-Tilda);
   
-  background-color: rgba(0, 0, 0, 0.5);
+  background: var(--primary-gradient);
   border-radius: 10px;
 }
 
@@ -144,12 +146,12 @@
     font-size: var(--fz-s);
     font-family: var(--ff-Tilda);
     font-weight: 500;
-    color: var(--base-light-color);
+    color: var(--base-dark-color);
     
     border: none;
     border-radius: 6px;
-    background-color: var(--color-red);
-    background: linear-gradient(to right bottom, var(--color-red), var(--color-orange));
+    background-color: var(--color-light-blue);
+    /* background: linear-gradient(to right bottom, var(--color-red), var(--color-orange)); */
     box-shadow: 0 3px 5px 0px rgba(var(--base-dark-color), 0.3);
     
     transition: all 0.2s ease-in-out;

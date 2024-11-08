@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { LayoutComponent } from '../Layout/Layout';
-import { SpecialComponent } from '../Special/Special';
 import { HeroComponent } from '../Hero/Hero';
 import { IntroComponent } from '../Intro/Intro';
+import { AboutComponent } from '../About/About';
 import { StepsComponent } from '../Steps/Steps';
 import { ContactsComponent } from '../Contacts/Contacts';
 import { FloatButtonComponent } from '../FloatButton/FloatButton';
@@ -11,9 +11,9 @@ import { ProjectsComponent } from '../Projects/Projects';
 const MainPage = () => {
   return (
     <>
-      <HeroComponent />
-      <SpecialComponent />
       <IntroComponent />
+      <HeroComponent />
+      <AboutComponent />
       <ProjectsComponent />
       <StepsComponent />
       <ContactsComponent />

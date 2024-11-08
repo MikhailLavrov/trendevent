@@ -1,48 +1,98 @@
 @import '../../styles/vars.css'; 
 
 .intro {
-  padding: 40px 0;
-
-  font-family: var(--ff-Tilda);
-  color: var(--base-dark-color);
-  line-height: 1.1;
+  padding-bottom: 40px;
 
   background-color: var(--base-light-color);
+  font-family: var(--ff-Tilda);
+  color: var(--base-dark-color);
 }
 
-.intro__headerTitle {
+.logo {
+  padding: 20px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts {
+  padding: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.phone__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  display: none;
 
   font-size: var(--fz-m);
 }
 
-.intro__headerSubtitle {
+.phone__number {
   margin: 0;
 
-  font-size: calc(var(--fz-s) + 1px);
+  font-size: var(--fz-m);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--base-dark-color);
 }
 
-@media (min-width: 500px) {
-  .intro__headerSubtitle {
-    font-size: calc(var(--fz-s) + 2px);
-  }
+.openingHours__text {
+  margin: 0;
+
+  font-size: calc(var(--fz-s) - 2px);
 }
 
 @media (min-width: 768px) {
-  .intro__headerTitle {
-    margin-bottom: 20px;
-
-    font-size: calc(var(--fz-m) + 2px);
+  .intro {
+    padding: 40px 0;
   }
 
-  .intro__headerSubtitle {
-    font-size: var(--fz-m);
+  .intro__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
+  .contacts {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .phone__title {
+    display: block;
   }
 }
 
-@media (min-width: 1024px) {
-  .intro {
-    padding: 80px 0;
+@media (min-width: 1260px) {
+  .logo img {
+    width: 350px;
+  }
+
+  .contacts {
+    gap: 10px;
+  }
+
+  .phone__title {
+    margin-bottom: 20px;
+  }
+
+  .phone__number {
+    font-size: var(--fz-l);
+  }
+
+  .openingHours__text {
+    font-size: var(--fz-s);
   }
 }
