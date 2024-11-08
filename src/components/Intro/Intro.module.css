@@ -1,0 +1,48 @@
+@import '../../styles/vars.css'; 
+
+.intro {
+  padding: 40px 0;
+
+  font-family: var(--ff-Tilda);
+  color: var(--base-dark-color);
+  line-height: 1.1;
+
+  background-color: var(--base-light-color);
+}
+
+.intro__headerTitle {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: var(--fz-m);
+}
+
+.intro__headerSubtitle {
+  margin: 0;
+
+  font-size: calc(var(--fz-s) + 1px);
+}
+
+@media (min-width: 500px) {
+  .intro__headerSubtitle {
+    font-size: calc(var(--fz-s) + 2px);
+  }
+}
+
+@media (min-width: 768px) {
+  .intro__headerTitle {
+    margin-bottom: 20px;
+
+    font-size: calc(var(--fz-m) + 2px);
+  }
+
+  .intro__headerSubtitle {
+    font-size: var(--fz-m);
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    padding: 80px 0;
+  }
+}

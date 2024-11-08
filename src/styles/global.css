@@ -1,0 +1,82 @@
+@import 'vars.css'; 
+/* @import 'm-queries.css'; */
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background-color: var(--color-primary-bg);
+  color: var(--base-dark-color);
+}
+
+header,
+footer {
+  font-family: var(--ff-Tilda);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--ff-Tilda);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+a,
+button {
+  font-family: var(--ff-Tilda);
+}
+
+#root {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--primary-indent);
+
+  max-width: calc(var(--vp-768) + var(--primary-indent) * 2);
+  height: 100%;
+  
+  @media (min-width: 768px) {
+    padding: 0 var(--secondary-indent);
+  
+    max-width: calc(var(--vp-1380) + var(--secondary-indent) * 2);
+  };
+}
+
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  
+  width: 1px;
+  height: 1px;
+
+  border: none;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

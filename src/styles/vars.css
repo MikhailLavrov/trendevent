@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --base-dark-color: #000000;
+  --base-light-color: #ffffff;
+
+  /* Primary */
+  --color-primary-bg: #ffaa00;
+  --color-primary-translucent: color-mix(in srgb, var(--color-primary-bg), white 70%);
+  
+  --color-grey: #cdcdcd;
+  --color-red: #f93d04;
+  --color-red-light: #fd6638;
+  --color-orange: #fe7f24;
+  --color-light-blue: #c6e5fc;
+
+  /* gradients */
+  --primary-gradient: linear-gradient(45deg, var(--color-orange) 60%, var(--color-red) 90%);
+
+  /* socials palette */
+  --color-telegram-blue: #2aabee;
+  --color-whatsapp-green: #2bb741;
+  --color-vk-blue: #4c75a3;
+
+  /* Indents */
+  --primary-indent: 10px;
+  --secondary-indent: 20px;
+
+  /* Fonts */
+  --ff-Tilda: "Tilda Sans", "Arial", sans-serif;
+  --fz-s: 15px;
+  --fz-m: 20px;
+  --fz-l: 25px;
+
+  /* Breakpoints */
+  --vp-500: 500px;
+  --vp-768: 768px;
+  --vp-1260: 1260px;
+  --vp-1380: 1380px;
+  --vp-1600: 1600px;
+}

@@ -1,0 +1,55 @@
+@import '../../styles/vars.css'; 
+
+.burger__button {
+  margin-left: auto;
+}
+
+.drawerWrapper {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  margin: 0;
+  margin-bottom: auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu__item a,
+.menu__item span {
+  padding: 10px;
+
+  width: 100%;
+
+  display: inline-block;
+
+  color: var(--base-dark-color);
+  font-size: calc(var(--fz-s) + 2px);
+}
+
+.socialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneLink {
+  padding: 10px;
+  
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--base-dark-color);
+  font-size: var(--fz-s);
+}
+
+@media (min-width: 1024px) {
+  .burger__button {
+    display: none;
+  }
+}

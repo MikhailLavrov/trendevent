@@ -1,0 +1,17 @@
+@import '../../styles/vars.css'; 
+
+.floatButton {
+  position: fixed;
+  right: 15px;
+  bottom: 62px;
+  
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .floatButton {
+    right: 24px;
+    bottom: 48px;
+  }
+}
