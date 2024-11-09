@@ -15,6 +15,7 @@
 
   /* gradients */
   --primary-gradient: linear-gradient(45deg, var(--color-orange) 60%, var(--color-red) 90%);
+  --secondary-gradient: linear-gradient(-45deg, var(--color-orange) 20%, var(--color-red) 60%);
 
   /* socials palette */
   --color-telegram-blue: #2aabee;

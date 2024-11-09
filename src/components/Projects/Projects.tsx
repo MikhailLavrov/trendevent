@@ -7,15 +7,12 @@ export const ProjectsComponent = () => {
     return (
       <li className={c.projects__item} key={index}>
         <div className={c.projects__imageWrapper}>
-          <Image.PreviewGroup
-            items={item.images || [item.image]} // Если `images` отсутствует, используется основное изображение
-          >
-            <Image
-              src={item.image}
-              alt={item.title}
-              style={{ width: '100%', height: 'auto' }} 
-            />
-          </Image.PreviewGroup>
+          <Image
+            preview={false}
+            src={item.image}
+            alt={item.title}
+            style={{ width: '100%', height: 'auto' }} 
+          />
         </div>
         <p className={c.projects__itemTitle}>{item.title}</p>
         <p className={c.projects__itemDescription}>{item.description}</p>
