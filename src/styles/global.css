@@ -1,5 +1,4 @@
 @import 'vars.css'; 
-/* @import 'm-queries.css'; */
 
 html,
 body {
@@ -7,7 +6,7 @@ body {
   min-height: 100%;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-  background-color: var(--color-primary-bg);
+  background-color: var(--base-light-color);
   color: var(--base-dark-color);
 }
 
