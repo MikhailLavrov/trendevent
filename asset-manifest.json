@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/trendevent/static/css/main.76a8744d.css",
+    "main.js": "/trendevent/static/js/main.8da69b91.js",
+    "static/js/453.9f1f9042.chunk.js": "/trendevent/static/js/453.9f1f9042.chunk.js",
+    "static/media/6.webp": "/trendevent/static/media/6.6a3e3e0d288e3cb488ad.webp",
+    "static/media/2.webp": "/trendevent/static/media/2.25e94bbf285bdc314699.webp",
+    "static/media/1.webp": "/trendevent/static/media/1.7925a7b59b8dc0eb132e.webp",
+    "static/media/3.webp": "/trendevent/static/media/3.f5b1d853cf262245782b.webp",
+    "static/media/7.webp": "/trendevent/static/media/7.69be2725f8c69e48ed24.webp",
+    "static/media/5.webp": "/trendevent/static/media/5.f80bcb8fdfce6738bdee.webp",
+    "static/media/9.webp": "/trendevent/static/media/9.30675badc18f4a2c5c5a.webp",
+    "static/media/4.webp": "/trendevent/static/media/4.8881d1c36081503fdfa1.webp",
+    "static/media/TildaSans-Light.woff": "/trendevent/static/media/TildaSans-Light.da05a6c07f6f161b6cd5.woff",
+    "static/media/TildaSans-Bold.woff": "/trendevent/static/media/TildaSans-Bold.7c8ed76dd091c4d3ac7d.woff",
+    "static/media/TildaSans-Semibold.woff": "/trendevent/static/media/TildaSans-Semibold.357320cc3c10f7d792b3.woff",
+    "static/media/TildaSans-Medium.woff": "/trendevent/static/media/TildaSans-Medium.1eced789c8c85a3ebdf3.woff",
+    "static/media/TildaSans-Regular.woff": "/trendevent/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
+    "static/media/8.webp": "/trendevent/static/media/8.0ad9343b42159edb80f2.webp",
+    "static/media/TildaSans-Light.woff2": "/trendevent/static/media/TildaSans-Light.9df27024da31c1e64a58.woff2",
+    "static/media/TildaSans-Bold.woff2": "/trendevent/static/media/TildaSans-Bold.7b20d6ac9e458d542ac9.woff2",
+    "static/media/TildaSans-Semibold.woff2": "/trendevent/static/media/TildaSans-Semibold.3b24df94c76ce65b9fa6.woff2",
+    "static/media/TildaSans-Medium.woff2": "/trendevent/static/media/TildaSans-Medium.90e34d39fb42c65017a6.woff2",
+    "static/media/TildaSans-Regular.woff2": "/trendevent/static/media/TildaSans-Regular.ea99090449b0ab24b898.woff2",
+    "static/media/logo.svg": "/trendevent/static/media/logo.b10891a69779c9a589f98dc854806896.svg",
+    "static/media/map.webp": "/trendevent/static/media/map.1e6229670b1db1e54731.webp",
+    "static/media/sprite.svg": "/trendevent/static/media/sprite.9451091fdb174375e3d8f0847c418405.svg",
+    "index.html": "/trendevent/index.html",
+    "main.76a8744d.css.map": "/trendevent/static/css/main.76a8744d.css.map",
+    "main.8da69b91.js.map": "/trendevent/static/js/main.8da69b91.js.map",
+    "453.9f1f9042.chunk.js.map": "/trendevent/static/js/453.9f1f9042.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76a8744d.css",
+    "static/js/main.8da69b91.js"
+  ]
+}
