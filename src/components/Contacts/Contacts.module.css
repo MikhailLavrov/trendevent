@@ -29,6 +29,19 @@
   gap: 20px;
 }
 
+.contacts__itemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacts__subtitle {
+  margin: 0;
+
+  font-size: var(--fz-s);
+  font-weight: 500;
+}
+
 .contacts__item {
   display: flex;
   align-items: stretch;
@@ -83,6 +96,11 @@
 
   .contacts__infoWrapper {
     gap: 30px;
+  }
+
+  .contacts__subtitle {
+    font-size: calc(var(--fz-m) - 2px);
+    font-weight: 600;
   }
 
   .contacts__item * {

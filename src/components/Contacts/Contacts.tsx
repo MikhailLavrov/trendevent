@@ -15,16 +15,19 @@ export const ContactsComponent = () => {
   return (
     <section className={c.contacts} id='contacts'>
       <div className={`${c.contacts__container} container`}>
-        <h2 className={c.contacts__header}>Наши контакты</h2>
+        <h2 className={c.contacts__header}>Возникли вопросы?</h2>
         <div className={c.contacts__innerContainer}>
           <div className={c.contacts__infoWrapper}>
+            <div className={c.contacts__itemWrapper}>
+              <p className={c.contacts__subtitle}>Звоните нам по телефону:</p>
+              <div className={c.contacts__item}>
+                <MobileOutlined />
+                <a href={`tel:${contactsData.phone}`}>{contactsData.phoneMasked}</a>
+              </div>
+            </div>
             <div className={c.contacts__item}>
               <ClockCircleOutlined />
               <p>{contactsData.openingHours}</p>
-            </div>
-            <div className={c.contacts__item}>
-              <MobileOutlined />
-              <a href={`tel:${contactsData.phone}`}>{contactsData.phoneMasked}</a>
             </div>
             <div className={c.contacts__item}>
               <EnvironmentOutlined />
@@ -36,8 +39,11 @@ export const ContactsComponent = () => {
               <MailOutlined />
               <a href={`mailto:${contactsData.email}`}>{contactsData.email}</a>
             </div>
-            <div className={c.socialsWrapper}>
-              <SocialLinks />
+            <div className={c.contacts__itemWrapper}>
+              <p className={c.contacts__subtitle}>Пишите в мессенджеры:</p>
+              <div className={c.socialsWrapper}>
+                <SocialLinks />
+              </div>
             </div>
           </div>
           <div className={c.contacts__map}>

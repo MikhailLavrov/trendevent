@@ -16,10 +16,10 @@ export const headerMenu: HeaderMenuItem[] = [
     title: 'Услуги',
     key: 'services',
   },
-  // {
-  //   title: 'Портфолио',
-  //   key: 'portfolio',
-  // },
+  {
+    title: 'Портфолио',
+    key: 'portfolio',
+  },
   {
     title: 'Контакты',
     key: 'contacts',
