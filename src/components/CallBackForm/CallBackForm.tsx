@@ -11,7 +11,17 @@ interface FormData {
   callbackAgreement: boolean;
 }
 
-export const CallbackForm = () => { 
+interface CallbackFormProps {
+  title?: string,
+  subtitle?: string,
+  outerHandler? : any
+}
+
+export const CallbackForm: React.FC<CallbackFormProps> = ({
+  title,
+  subtitle,
+  outerHandler
+}) => { 
   const {
     register,
     handleSubmit,
@@ -35,6 +45,7 @@ export const CallbackForm = () => {
     
     sessionStorage.setItem('submitted', 'true');
     setIsSubmitted(true);
+    outerHandler && outerHandler();
     sendOrder({message});
     reset();
   }
@@ -50,8 +61,8 @@ export const CallbackForm = () => {
       )
     : <>
       <div className={c.formHeader}>
-        <p className={c.formHeader__title}>Нужно оформление воздушными шарами?</p>
-        <p className={c.formHeader__subtitle}>Оставьте свои контакты, мы свяжемся с вами.</p>
+        <p className={c.formHeader__title}>{title}</p>
+        <p className={c.formHeader__subtitle}>{subtitle}</p>
       </div>
       <form 
         onSubmit={handleSubmit(onSubmit)}
@@ -99,16 +110,9 @@ export const CallbackForm = () => {
         </label>
 
         <label htmlFor="callbackAgreement" className={c.form__agreementLabel}>
-          <input 
-            type="checkbox"
-            id='callbackAgreement'
-            {...register("callbackAgreement", { 
-              required: 'Необходимо подтверждение',
-            }
-          )} />
-          Соглашаюсь на 
+          Отправляя свои данные вы соглашаетесь с правилами 
           <PrivacyModal
-            buttonName={'обработку персональных данных'}
+            buttonName={'обработки персональных данных'}
             title={'Пользовательское соглашение'}
             text={personalAgreement}
           />

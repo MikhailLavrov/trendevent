@@ -3,6 +3,7 @@ import MAP from '../../assets/map.webp';
 import { ClockCircleOutlined, EnvironmentOutlined, MailOutlined, MobileOutlined } from '@ant-design/icons';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { contactsData } from '../../data/contactsData';
+import { CallBackModal } from '../CallBackModal/CallBackModal';
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -45,6 +46,7 @@ export const ContactsComponent = () => {
                 <SocialLinks />
               </div>
             </div>
+            <CallBackModal className={c.feedbackButton} />
           </div>
           <div className={c.contacts__map}>
             <img width={200} src={MAP} alt="Карта" />

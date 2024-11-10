@@ -52,7 +52,7 @@
 @media (min-width: 1024px) {
   .about__container {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr minmax(400px, auto);
     gap: 40px;
   }
 

@@ -26,7 +26,10 @@ export const AboutComponent = () => {
             ))}
           </p>
         </div>
-        <CallbackForm />
+        <CallbackForm
+          title='Нужно оформление воздушными шарами?'
+          subtitle='Оставьте свои контакты, мы свяжемся с вами.'
+        />
       </div>
     </section>
   )
