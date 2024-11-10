@@ -47,6 +47,7 @@
   "devDependencies": {
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@yandex/ymaps3-types": "^1.0.15194938",
     "gh-pages": "^6.2.0",
     "typescript": "^4.9.5"
   }

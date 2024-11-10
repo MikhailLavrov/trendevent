@@ -5,7 +5,7 @@
 
   /* Primary */
   --color-primary-bg: #ffaa00;
-  --color-primary-translucent: color-mix(in srgb, var(--color-primary-bg), white 20%);
+  --color-primary-translucent: color-mix(in srgb, var(--color-primary-bg), #ffffff 75%);
   
   --color-grey: #cdcdcd;
   --color-red: #f93d04;

@@ -16,7 +16,6 @@ export const priceData: PriceData[] = [
   {
     title: 'Фотозоны из воздушных шаров',
     price: 10000,
-    measure: 'шт',
     category: 'decor',
   },
   {
@@ -39,7 +38,6 @@ export const priceData: PriceData[] = [
   {
     title: 'Аренда надувного батута',
     price: 20000,
-    measure: '3 часа',
     category: 'animation',
   },
   {
@@ -72,13 +70,11 @@ export const priceData: PriceData[] = [
   {
     title: 'Корпоративные подарки в деревянных ящичках',
     price: 3000,
-    measure: 'шт',
     category: 'present',
   },
   {
     title: 'Цветочные букеты и композиции',
     price: 3500,
-    measure: 'шт',
     category: 'present',
   },
 ];

@@ -5,7 +5,7 @@
 
   font-family: var(--ff-tilda);
 
-  background-color: rgba(255, 140, 0, 0.266);
+  background-color: var(--color-primary-translucent);
 }
 
 .price__listContainer {
@@ -70,8 +70,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-
-  /* flex-shrink: 0; */
 }
 
 .price__itemPrice {

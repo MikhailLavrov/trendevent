@@ -39,8 +39,7 @@
   
   text-align: center;
 
-  background-color: #ffffff52;
-  background: linear-gradient(to bottom, #ffffffe7, #ffffff8f);
+  background-color: var(--color-primary-translucent);
   border-radius: 10px;
 }
 
