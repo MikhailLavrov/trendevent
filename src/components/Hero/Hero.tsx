@@ -9,7 +9,10 @@ export const HeroComponent = () => {
           <p className={c.hero__text}>Украшаем шарами важные мероприятия</p>
         </div>
         <div className={c.hero__imageWrapper}>
-          <img width={200} src={HERO_IMAGE} alt="Спецпредложение" />
+          <img
+            src={HERO_IMAGE}
+            alt="Спецпредложение"
+          />
         </div>
       </div>
     </section>

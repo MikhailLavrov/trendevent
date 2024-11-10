@@ -116,7 +116,6 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
             title={'Пользовательское соглашение'}
             text={personalAgreement}
           />
-          {errors?.callbackAgreement && <span className={c.form__error}>{errors?.callbackAgreement?.message || 'Необходимо подтверждение'}</span>}
         </label>
 
         <input className={c.submitButton} type="submit" disabled={!isValid} />

@@ -17,7 +17,7 @@
 
   &.swiper-slide-active {
     opacity: 1;
-    transform: scale(1.2);
+    scale: 1.8;
   }
 }
 
@@ -25,8 +25,8 @@
 .gallery__slider .swiper-button-prev,
 .gallery__slider .swiper-button-next {
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--color-red);
 
@@ -43,6 +43,12 @@
   .gallery__slider .swiper-button-next {
     display: flex;
     align-items: center;
+  }
+
+  .gallery__slide {
+    &.swiper-slide-active {
+      scale: 1.5;
+    }
   }
 }
 

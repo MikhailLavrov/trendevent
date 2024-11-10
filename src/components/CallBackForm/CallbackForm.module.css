@@ -77,11 +77,6 @@
     flex-direction: column;
     
     user-select: none;
-
-    & small {
-      color: var(--color-red);
-      font-size: var(--fz-s);
-    }
   }
 
   & .form__agreementLabel {
@@ -112,7 +107,7 @@
 
     & .form__error {
      grid-column: 1/-1;
-     color: var(--color-red);
+     color: var(--color-grey);
     }
   }
 
@@ -151,7 +146,7 @@
     
     border: none;
     border-radius: 6px;
-    background-color: var(--color-light-blue);
+    background-color: var(--color-primary-translucent);
     box-shadow: 0 3px 5px 0px rgba(var(--base-dark-color), 0.3);
     
     transition: all 0.2s ease-in-out;
@@ -161,7 +156,7 @@
     &:hover {
       color: var(--base-light-color);
 
-      background-color: var(--color-red-light);
+      background-color: var(--color-red);
       opacity: 0.9;
     }
 
@@ -182,11 +177,12 @@
 }
 
 .form__error {
-  color: var(--color-red);
+  color: yellow !important;
  }
 
 .submitButton {
   &:disabled {
     opacity: 0.6;
+    color: var(--color-grey) !important;
   }
 }
