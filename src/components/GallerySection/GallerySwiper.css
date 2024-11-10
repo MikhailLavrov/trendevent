@@ -25,8 +25,8 @@
 .gallery__slider .swiper-button-prev,
 .gallery__slider .swiper-button-next {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: var(--color-red);
 
@@ -54,10 +54,10 @@
 
 .gallery__slider .swiper-button-prev {
   right: auto;
-  left: 30%;
+  left: 27.8%;
 }
 
 .gallery__slider .swiper-button-next {
-  right: 30%;
+  right: 27.8%;
   left: auto;
 }

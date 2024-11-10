@@ -1,6 +1,8 @@
 import { priceData } from '../../data/priceData';
 import c from './Price.module.css';
 
+const PRICE_IMAGE = 'https://polet-normalnuj.ru/wp-content/uploads/2020/09/IMG_2373-600x724.jpg';
+
 export const PriceComponent = () => {
   const groupedPriceData = priceData.reduce((acc, item) => {
     if (!acc[item.category]) {
@@ -43,8 +45,8 @@ export const PriceComponent = () => {
           <div className={c.price__imageWrapper}>
             <img
               width={200}
-              src='https://polet-normalnuj.ru/wp-content/uploads/2020/09/IMG_2373-600x724.jpg'
-              alt="Cleaning"
+              src={PRICE_IMAGE}
+              alt="Прайс"
             />
           </div>
         </div>
