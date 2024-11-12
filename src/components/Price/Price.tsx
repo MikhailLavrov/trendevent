@@ -1,7 +1,6 @@
 import { priceData } from '../../data/priceData';
 import c from './Price.module.css';
-
-const PRICE_IMAGE = 'https://polet-normalnuj.ru/wp-content/uploads/2020/09/IMG_2373-600x724.jpg';
+import PRICE_IMAGE from '../../assets/price_img.webp';
 
 export const PriceComponent = () => {
   const groupedPriceData = priceData.reduce((acc, item) => {

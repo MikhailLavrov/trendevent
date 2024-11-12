@@ -109,7 +109,7 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
           {errors?.phone && <span className={c.form__error}>{errors?.phone?.message || 'Заполните поле'}</span>}
         </label>
 
-        <label htmlFor="callbackAgreement" className={c.form__agreementLabel}>
+        <label className={c.form__agreementLabel}>
           Отправляя свои данные вы соглашаетесь с правилами 
           <PrivacyModal
             buttonName={'обработки персональных данных'}
