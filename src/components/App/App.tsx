@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { LayoutComponent } from '../Layout/Layout';
 import { HeroComponent } from '../Hero/Hero';
 import { IntroComponent } from '../Intro/Intro';
@@ -9,6 +9,20 @@ import { FloatButtonComponent } from '../FloatButton/FloatButton';
 import { ProjectsComponent } from '../Projects/Projects';
 import { PriceComponent } from './../Price/Price';
 import { GallerySection } from '../GallerySection/GallerySection';
+import { useEffect } from 'react';
+
+const useYandexMetrika = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname + location.hash;
+  
+    if (typeof window.ym === "function") {
+      window.ym(98993106, "hit", path.toString());
+    }
+  }, [location]);
+  
+};
 
 const MainPage = () => {
   return (
@@ -27,6 +41,8 @@ const MainPage = () => {
 }
 
 export const App = () => {
+  useYandexMetrika();
+  
   return (
     <Routes>
       <Route path='/' element={<LayoutComponent /> }>

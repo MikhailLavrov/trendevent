@@ -19,5 +19,6 @@
     "src",
     "styles.d.ts",
     "images.d.ts",
+    "global.d.ts"
   ]
 }
