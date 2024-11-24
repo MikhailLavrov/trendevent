@@ -16,6 +16,8 @@
   opacity: 0.5;
 
   &.swiper-slide-active {
+    transition: all 200ms ease-in-out;
+    transition-delay: 0.1s;
     opacity: 1;
     scale: 1.8;
   }
