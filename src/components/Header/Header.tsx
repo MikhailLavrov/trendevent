@@ -3,13 +3,19 @@ import { DrawerComponent } from '../Drawer/Drawer';
 import { headerMenu } from '../../data/menuData';
 import { MenuLink } from '../MenuLink/MenuLink';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
+import { motion } from 'motion/react';
 
 export const HeaderComponent = () => {
   const menuItems = headerMenu.map((item, i) => {
     return (
-      <li className={c.header__menuItem} key={item.key}>
+      <motion.li
+        initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {delay: i * 0.1}}}
+        className={c.header__menuItem}
+        key={item.key}
+      >
         <MenuLink item={item} />
-      </li>
+      </motion.li>
     );
   });
 

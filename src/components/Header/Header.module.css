@@ -28,16 +28,23 @@
 }
 
 .header__menuItem {
-  padding: 10px;
-
+  
   & a, span {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
     color: var(--base-light-color);
     font-size: var(--fz-s);
-    transition: all 300ms ease-in-out;
+    transition: box-shadow .2s ease-in;
     cursor: pointer;
+    user-select: none;
 
     &:hover {
-      box-shadow: 0 4px 3px -3px var(--base-light-color);
+      box-shadow: 0 16px 0 -15px var(--base-light-color);
     }
   }
 }

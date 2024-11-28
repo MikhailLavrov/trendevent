@@ -12,12 +12,13 @@
 
   background-color: var(--base-light-color);
 
-  background: linear-gradient(90deg, var(--base-light-color), var(--color-grey));
+  /* background: linear-gradient(90deg, var(--base-light-color), #dedede); */
   background-size: 400% 400%;
   animation: gradientAnimation 3s ease infinite;
+
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -27,4 +28,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
