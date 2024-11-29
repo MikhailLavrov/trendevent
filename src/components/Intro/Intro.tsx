@@ -9,6 +9,7 @@ export const IntroComponent = () => {
   return (
     <section className={c.intro}>
       <div className={`${c.intro__container} container`}>
+        <h1 className='visually-hidden'>Тренд на праздник. Креативное event-агентство в Ленинградской области.</h1>
         <motion.div 
           className={c.logoWrapper}
           initial={{opacity: 0, scale: 0}}
@@ -31,7 +32,7 @@ export const IntroComponent = () => {
         >
           <div className={c.phone}>
             <p className={c.phone__title}>Гатчина, СПб и ЛО</p>
-            <a className={c.phone__number} href={`tel:${contactsData.phone}`}>{contactsData.phoneMasked}</a>
+            <a className={c.phone__number} href={`tel:${contactsData.phone}`} aria-label="Позвонить">{contactsData.phoneMasked}</a>
           </div>
           <div className={c.openingHours}>
             <p className={c.openingHours__text}>{contactsData.openingHours}</p>

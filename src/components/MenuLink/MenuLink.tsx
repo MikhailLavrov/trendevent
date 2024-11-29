@@ -22,7 +22,7 @@ export const MenuLink = ({item, className, onClickHandler}: MenuLinkProps) => {
   return (
     <>
     {item?.key.length !== 0 ? (
-      <a className={className} href={`#${item?.key}`} onClick={onClickHandler}>
+      <a className={className} href={`#${item?.key}`} onClick={onClickHandler} aria-label={`Перейти к ${item.title}`}>
         {item.title}
       </a>
       ) : (

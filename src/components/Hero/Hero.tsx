@@ -9,6 +9,7 @@ export const HeroComponent = () => {
   return (
     <section className={c.hero}>
       <div className={`${c.hero__container} container`}>
+        <h2 className='visually-hidden'>Украшение воздушными шарами, фотозоны, аниматоры.</h2>
         <div className={c.hero__textWrapper}>
           <motion.p
             className={c.hero__text}

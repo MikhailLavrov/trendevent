@@ -21,7 +21,7 @@ export const FooterComponent = () => {
           />
         </div>
         <div className={c.devLink}>
-          <a href="https://github.com/MikhailLavrov" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/MikhailLavrov" target="_blank" rel="noopener noreferrer" aria-label="Перейти на сайт разработчика">
             Frontend - MikhailLavrov
           </a>
           <GithubOutlined />

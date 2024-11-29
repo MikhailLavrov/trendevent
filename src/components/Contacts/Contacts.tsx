@@ -23,7 +23,7 @@ export const ContactsComponent = () => {
               <p className={c.contacts__subtitle}>Звоните нам по телефону:</p>
               <div className={c.contacts__item}>
                 <MobileOutlined />
-                <a href={`tel:${contactsData.phone}`}>{contactsData.phoneMasked}</a>
+                <a href={`tel:${contactsData.phone}`} aria-label="Позвонить">{contactsData.phoneMasked}</a>
               </div>
             </div>
             <div className={c.contacts__item}>
@@ -32,13 +32,13 @@ export const ContactsComponent = () => {
             </div>
             <div className={c.contacts__item}>
               <EnvironmentOutlined />
-              <a href={mapLink} target="_blank" rel="noopener noreferrer">
+              <a href={mapLink} target="_blank" rel="noopener noreferrer" aria-label="Построить маршрут">
                 {contactsData.address}
               </a>
             </div>
             <div className={c.contacts__item}>
               <MailOutlined />
-              <a href={`mailto:${contactsData.email}`}>{contactsData.email}</a>
+              <a href={`mailto:${contactsData.email}`} aria-label="Написать email">{contactsData.email}</a>
             </div>
             <div className={c.contacts__itemWrapper}>
               <p className={c.contacts__subtitle}>Пишите в мессенджеры:</p>
