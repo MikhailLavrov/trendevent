@@ -61,13 +61,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.contacts__map img {
-  width: 100%;
-  max-width: 600px;
-  
-  aspect-ratio: 1 / 1;
+  & .map {
+    width: 100% !important;
+    max-width: 600px;
+    
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .socialsWrapper {
@@ -130,8 +130,11 @@
   .contacts__item * {
     font-size: calc(var(--fz-m) - 2px);
   }
-  .contacts__map img {
-    max-width: 500px;
+  .contacts__map {
+
+    & .map {
+      max-width: 500px;
+    }
   }
 }
 

@@ -1,9 +1,10 @@
 import c from './Contacts.module.css';
-import MAP from '../../assets/map.webp';
 import { ClockCircleOutlined, EnvironmentOutlined, MailOutlined, MobileOutlined } from '@ant-design/icons';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { contactsData } from '../../data/contactsData';
 import { CallBackModal } from '../CallBackModal/CallBackModal';
+import { MapComponent } from '../YandexMap/YandexMap';
+// import MAP from '../../assets/map.webp';
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -49,7 +50,7 @@ export const ContactsComponent = () => {
             <CallBackModal className={c.feedbackButton} />
           </div>
           <div className={c.contacts__map}>
-            <img width={200} src={MAP} alt="Карта" />
+            <MapComponent className={c.map} />
           </div>
         </div>
       </div>

@@ -1,0 +1,29 @@
+.customPlacemark {
+  position: relative;
+  width: 50px; /* Общий размер капли */
+  height: 70px;
+  background-color: white; /* Белый фон капли */
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Закругления */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+.customPlacemark::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Хвост капли */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.customPlacemark img {
+  width: 30px; /* Размер логотипа */
+  height: 30px;
+  border-radius: 50%;
+}
