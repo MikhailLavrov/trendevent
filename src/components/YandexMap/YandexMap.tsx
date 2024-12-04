@@ -1,5 +1,7 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import { contactsData } from '../../data/contactsData';
+import { useState } from 'react';
+import MAP_IMAGE from '../../assets/map.webp';
 
 const API_KEY = process.env.REACT_APP_YMAPS_APIKEY;
 
@@ -8,6 +10,8 @@ interface YMapsProps {
 }
 
 export const MapComponent = ({ className = '' }: YMapsProps) => {
+  const [isMapLoaded, setMapIsLoaded] = useState(true);
+
   const MAP_DEFAULT_STATE = { 
     center: [contactsData.lat, contactsData.lon], 
     zoom: 9,
@@ -27,19 +31,26 @@ export const MapComponent = ({ className = '' }: YMapsProps) => {
   };
 
   return (
-    <YMaps query={{ apikey: API_KEY }}>
-      <Map 
+    <>
+    {isMapLoaded ?
+      <YMaps query={{ apikey: API_KEY }}>
+        <Map 
         defaultState={MAP_DEFAULT_STATE} 
         className={className} 
         options={{ autoFitToViewport: 'always' }}
-      >
+        onError={() => setMapIsLoaded(false)}
+        >
         <Placemark
-          geometry={[contactsData.lat, contactsData.lon]}
-          options={PLACEMARK_OPTIONS}
-          properties={PLACEMARK_PROPERTIES}
-          modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
+        geometry={[contactsData.lat, contactsData.lon]}
+        options={PLACEMARK_OPTIONS}
+        properties={PLACEMARK_PROPERTIES}
+        modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
         />
-      </Map>
-    </YMaps>
+        </Map>
+      </YMaps>
+    : 
+    <img width={200} src={MAP_IMAGE} alt="Карта" />
+  }
+  </>
   );
 };
